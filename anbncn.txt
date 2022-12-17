@@ -1,0 +1,13 @@
+q0 _ _ > ACCEPT
+q0 a x > q1
+q0 x x > q0
+q1 a a > q1
+q1 x x > q1
+q1 b x > q2
+q2 b b > q2
+q2 x x > q2
+q2 c x < q3
+q3 x x < q3
+q3 a a < q3
+q3 b b < q3
+q3 _ _ > q0
